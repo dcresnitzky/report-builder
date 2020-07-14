@@ -1,0 +1,13 @@
+INSERT INTO public.meta (id, model, name, type, created_at, updated_at) VALUES (1, 'website', 'domain', 'text', '2020-07-14 18:09:24', '2020-07-14 18:09:24');
+INSERT INTO public.meta (id, model, name, type, created_at, updated_at) VALUES (2, 'website', 'created_at', 'timestamp', '2020-07-14 18:09:24', '2020-07-14 18:09:24');
+INSERT INTO public.operator (id, type, name, created_at, updated_at) VALUES (1, 'text', 'LIKE', '2020-07-14 15:26:29', '2020-07-14 15:26:29');
+INSERT INTO public.operator (id, type, name, created_at, updated_at) VALUES (2, 'timestamp', '>=', '2020-07-14 15:26:29', '2020-07-14 15:26:29');
+INSERT INTO public.value (id, value, created_at, updated_at) VALUES (1, 'org', '2020-07-14 15:27:14', '2020-07-14 15:27:14');
+INSERT INTO public.value (id, value, created_at, updated_at) VALUES (2, '2020-01-01', '2020-07-14 15:27:14', '2020-07-14 15:27:14');
+INSERT INTO public.report (id, created_at, updated_at) VALUES (1, '2020-07-14 15:28:01', '2020-07-14 15:28:01');
+INSERT INTO public.report_meta (id, meta_id, report_id, created_at, updated_at) VALUES (1, 1, 1, '2020-07-14 15:29:43', '2020-07-14 15:29:43');
+INSERT INTO public.report_meta (id, meta_id, report_id, created_at, updated_at) VALUES (2, 2, 1, '2020-07-14 15:29:43', '2020-07-14 15:29:43');
+INSERT INTO public.report_filter_group (id, report_id, created_at, updated_at) VALUES (1, 1, '2020-07-14 15:28:33', '2020-07-14 15:28:33');
+INSERT INTO public.report_filter_group (id, report_id, created_at, updated_at) VALUES (2, 1, '2020-07-14 15:28:33', '2020-07-14 15:28:33');
+INSERT INTO public.report_filter (id, report_filter_group_id, meta_id, value_id, operator_id, created_at, updated_at) VALUES (1, 1, 1, 1, 1, '2020-07-14 15:28:55', '2020-07-14 15:28:55');
+INSERT INTO public.report_filter (id, report_filter_group_id, meta_id, value_id, operator_id, created_at, updated_at) VALUES (2, 1, 2, 2, 2, '2020-07-14 15:28:55', '2020-07-14 15:28:55');
