@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/{id}', 'ReportController@show');
+Route::get('/report/{id}', 'ReportController@show');
 
